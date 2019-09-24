@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadatro de Alunos</title>
+</head>
+<body>
+<table border="1" width="600">
+<tr>
+<td><center><h2>Cadastro de Alunos</h2></center></td>
+</tr>
+</table>
+<form action="adm.php" method="post">
+<table width="600">
+<tr>
+<td width="100">Nome:</td>
+<td><input type="text" name="nome" size="50" maxlength="50">&nbsp;
+<img src="imgs/lupa.png" align="center" onClick="location.href='busca_nome.php?nome='+nome.value;">
+</td>
+</tr>
+<tr>
+<td width="100">E-mail:</td>
+<td><input type="text" name="mail" size="50" maxlength="30"></td>
+</tr>
+<tr>
+<td width="100">Fone:</td>
+<td><input type="text" name="ddd" size="1" maxlength="2">-<input type="text" name="fone" maxlength="9"></td>
+</tr>
+<tr>
+<td width="100">Endereço:</td>
+<td><input type="text" name="endereco" size="50" maxlength="50"></td>
+</tr>
+<tr>
+<td width="100">Cidade:</td>
+<td><input type="text" name="cidade" size="50" maxlength="30"></td>
+<td>U.F:</td>
+<td>
+<select name="uf">
+  <option>GO</option>
+  <option>TO</option>
+  <option>SP</option>
+  <option>RJ</option>
+  <option>DF</option>
+</select>
+<input type="hidden" name="funcao" value="gravar">
+</td>
+</tr>
+</table>
+<br>
+<table cellspacing="0">
+<tr bgcolor="#00ff00">
+<td width="300"><center><input type="reset" name="btLimpar" value="Limpar"></center></td>
+<td width="300"><center><input type="Submit" name="btGravar" value="Gravar"></center></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
